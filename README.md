@@ -26,3 +26,5 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 2. Write down every command that ran, in the order it ran — including the dead ends worth warning about.
 3. Anonymize, then verify the whole chain end to end one last time.
 4. Publish. If a guide is here, it worked.
+
+<!-- This repository only exists so that this README is displayed on the account profile page. -->
