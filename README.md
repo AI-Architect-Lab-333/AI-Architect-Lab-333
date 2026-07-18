@@ -19,6 +19,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 ### GPU / machine learning
 
 - **[blackwell-sdxl-setup-guide](https://github.com/AI-Architect-Lab-333/blackwell-sdxl-setup-guide)** — RTX 50xx (Blackwell / `sm_120`) GPUs with PyTorch nightly and reForge on WSL2, up to image generation through the API. Five pitfalls, each with its exact symptom and fix.
+- **[sdxl-batch-generation-guide](https://github.com/AI-Architect-Lab-333/sdxl-batch-generation-guide)** — file-driven batch image generation with reproducible manifests: prompt files anyone can edit, real seeds read back, byte-identical reproduction verified. Companion to the Blackwell setup guide.
 
 ## Method
 
