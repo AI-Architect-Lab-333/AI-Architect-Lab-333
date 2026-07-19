@@ -15,6 +15,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 
 - **[vps-tailscale-hardening-guide](https://github.com/AI-Architect-Lab-333/vps-tailscale-hardening-guide)** — locking down a VPS behind Tailscale until no port answers on the public IP. Covers the Docker-bypasses-UFW trap and the sshd config read-order trap.
 - **[vps-tailscale-backup-pull-guide](https://github.com/AI-Architect-Lab-333/vps-tailscale-backup-pull-guide)** — nightly pull-architecture backups between two VPS over Tailscale: rsync, systemd timers, integrity checksums, retention, and a restore procedure. Production can never touch its own backups.
+- **[dgx-spark-headless-setup](https://github.com/AI-Architect-Lab-333/dgx-spark-headless-setup)** — an NVIDIA DGX Spark as a hardened headless home-lab server: display-free first boot through its Wi-Fi hotspot, Tailscale-only SSH, and a UPS auto-shutdown (NUT) proven by a real power-cut test. Six pitfalls, including why NUT's default killpower cuts your router's power mid-outage.
 
 ### GPU / machine learning
 
