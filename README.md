@@ -10,6 +10,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 
 - **[ai-agent-guardrails-windows-guide](https://github.com/AI-Architect-Lab-333/ai-agent-guardrails-windows-guide)** — a global guardrail that blocks catastrophic shell commands (`rm -rf /`, `git push --force`, disk wipes…) before any AI agent runs them, on Windows. Documents two pitfalls that silently disable the naive Unix recipe.
 - **[pi-hermes-setup](https://github.com/AI-Architect-Lab-333/pi-hermes-setup)** — a controller/controlled agent pair: Pi Agent in Docker on Windows driving a Hermes agent on a remote VPS over SSH + tmux, with a Mixture of Agents preset.
+- **[windows-tmux-agent-orchestration](https://github.com/AI-Architect-Lab-333/windows-tmux-agent-orchestration)** — driving several AI agents in parallel tmux panes on Windows (WSL2): spawn, send input, read output, poll. A Cmux-to-tmux port; documents the `docker-desktop`-default-distro and PowerShell→wsl→bash quoting traps.
 
 ### Self-hosted infrastructure
 
