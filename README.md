@@ -18,6 +18,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 - **[vps-tailscale-backup-pull-guide](https://github.com/AI-Architect-Lab-333/vps-tailscale-backup-pull-guide)** — nightly pull-architecture backups between two VPS over Tailscale: rsync, systemd timers, integrity checksums, retention, and a restore procedure. Production can never touch its own backups.
 - **[tailscale-aperture-openrouter-gateway](https://github.com/AI-Architect-Lab-333/tailscale-aperture-openrouter-gateway)** — one identity-authenticated LLM gateway on your tailnet: the OpenRouter API key stays server-side and no device ever holds it, with per-user dollar quotas. Documents the non-existent-model-ID and silent empty-reasoning-response traps.
 - **[dgx-spark-headless-setup](https://github.com/AI-Architect-Lab-333/dgx-spark-headless-setup)** — an NVIDIA DGX Spark as a hardened headless home-lab server: display-free first boot through its Wi-Fi hotspot, Tailscale-only SSH, and a UPS auto-shutdown (NUT) proven by a real power-cut test. Six pitfalls, including why NUT's default killpower cuts your router's power mid-outage.
+- **[windows-durable-keep-awake](https://github.com/AI-Architect-Lab-333/windows-durable-keep-awake)** — keeping a Windows machine awake for a job and surviving a sign-out, via a SYSTEM Scheduled Task: the LaunchAgent equivalent, proven by a real sign-out test. Six pitfalls, including a SYSTEM task that is invisible — not merely unreadable — from an unelevated account.
 
 ### GPU / machine learning
 
