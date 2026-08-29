@@ -24,6 +24,10 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 - **[windows-durable-keep-awake](https://github.com/AI-Architect-Lab-333/windows-durable-keep-awake)** — keeping a Windows machine awake for a job and surviving a sign-out, via a SYSTEM Scheduled Task: the LaunchAgent equivalent, proven by a real sign-out test. Six pitfalls, including a SYSTEM task that is invisible — not merely unreadable — from an unelevated account.
 - **[uptime-kuma-tailscale-cross-host-monitor](https://github.com/AI-Architect-Lab-333/uptime-kuma-tailscale-cross-host-monitor)** — a second Uptime Kuma on another host over Tailscale so alerts still fire when production dies. Documents the `https`-to-plain-HTTP trap, Kuma 302 status codes, a misleading Push history line, and a reboot too short to turn monitors red.
 
+### Robotics
+
+- **[dgx-spark-mujoco-headless-panda](https://github.com/AI-Architect-Lab-333/dgx-spark-mujoco-headless-panda)** — headless MuJoCo on an NVIDIA GB10 ARM box: EGL renders, Franka Panda, a cube. Five pitfalls, including why snapping IK `qpos` lets the cube pass through the hand (`GRASP_OK` that is not a grasp).
+
 ### GPU / machine learning
 
 - **[blackwell-sdxl-setup-guide](https://github.com/AI-Architect-Lab-333/blackwell-sdxl-setup-guide)** — RTX 50xx (Blackwell / `sm_120`) GPUs with PyTorch nightly and reForge on WSL2, up to image generation through the API. Six pitfalls, each with its exact symptom and fix.
