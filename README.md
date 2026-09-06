@@ -27,7 +27,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 
 ### Robotics
 
-- **[dgx-spark-mujoco-headless-panda](https://github.com/AI-Architect-Lab-333/dgx-spark-mujoco-headless-panda)** — headless MuJoCo on an NVIDIA DGX Spark (GB10): EGL renders, Franka Panda, a cube, and a collision-aware 6-D pinch (`GRASP_OK`). Seven pitfalls, including why snapping IK `qpos` puts the cube through the hand, and why a green `GRASP_OK` with `ncon=0` is a toss, not a grasp. Needs the idle profile first.
+- **[dgx-spark-mujoco-headless-panda](https://github.com/AI-Architect-Lab-333/dgx-spark-mujoco-headless-panda)** — headless MuJoCo on an NVIDIA DGX Spark (GB10): EGL renders, Franka Panda, a collision-aware 6-D pinch (`GRASP_OK`), and batched MJX/Warp (GPU beats one CPU Panda at 2048 / 1024 envs). Pitfalls include teleport IK, a tossed-cube `GRASP_OK`, and quoting a single MJX env as a training rate. Needs the idle profile first.
 
 ### GPU / machine learning
 
