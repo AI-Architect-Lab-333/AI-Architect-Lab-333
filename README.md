@@ -28,6 +28,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 ### Robotics
 
 - **[dgx-spark-mujoco-headless-panda](https://github.com/AI-Architect-Lab-333/dgx-spark-mujoco-headless-panda)** — headless MuJoCo on an NVIDIA DGX Spark (GB10): EGL renders, Franka Panda, a collision-aware 6-D pinch (`GRASP_OK`), and batched MJX/Warp (GPU beats one CPU Panda at 2048 / 1024 envs). Pitfalls include teleport IK, a tossed-cube `GRASP_OK`, and quoting a single MJX env as a training rate. Needs the idle profile first.
+- **[dgx-spark-isaac-lab-headless](https://github.com/AI-Architect-Lab-333/dgx-spark-isaac-lab-headless)** — Isaac Sim 6.0.1 built from source and Isaac Lab on that same GB10, verified with a headless Cartpole smoke (`CARTPOLE_OK`, 16 envs, `cuda:0`). No GUI. Documents gcc 11 vs 13, a GNU sed that ate a trailing `r`, and a PyTorch sm_121 warning that did not stop the 20 steps. No H1 training in this guide.
 
 ### GPU / machine learning
 
