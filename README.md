@@ -16,6 +16,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 ### Evaluation
 
 - **[eval-bench-frontier-witness](https://github.com/AI-Architect-Lab-333/eval-bench-frontier-witness)** — measuring what a local model **gives up** against a frontier one, on your own work: deterministic checks, no model-as-judge, and a frontier pass run **first** as a witness of the bench's own validity. That witness scored **69%** on the first pass — nothing was wrong with the model, six things were wrong with the bench. Ten pitfalls, including a reasoning model that spends its entire token budget and returns zero characters, a brevity check an empty answer passes, and why five wrongly lenient checks survived three witness passes unseen. Ships the bench, its self-test, and the audit that finds leniency.
+- **[bench-saturation-refusal](https://github.com/AI-Architect-Lab-333/bench-saturation-refusal)** — the companion problem: the bench is honest and still useless, because every model passes. How to detect saturation, how to write cases whose obvious answer is wrong, and how to measure refusal as a number instead of an anecdote. The case set was rebuilt four times harder and produced **zero wrong answers in 108 model-case pairs** — these models do not answer incorrectly on this material, they stop, having burned up to 62 500 tokens deciding to.
 
 ### Self-hosted infrastructure
 
