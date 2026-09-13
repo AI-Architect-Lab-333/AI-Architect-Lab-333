@@ -15,7 +15,7 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 
 ### Evaluation
 
-- **[eval-bench-frontier-witness](https://github.com/AI-Architect-Lab-333/eval-bench-frontier-witness)** — measuring what a local model actually costs you versus a frontier one, on your own work: deterministic checks, no model-as-judge, and a frontier pass run **first** as a witness of the bench's own validity. That witness scored **69%** on the first pass — nothing was wrong with the model, six things were wrong with the bench. Ten pitfalls, including a reasoning model that spends its entire token budget and returns zero characters, a brevity check an empty answer passes, and why five wrongly lenient checks survived three witness passes unseen. Ships the bench, its self-test, and the audit that finds leniency.
+- **[eval-bench-frontier-witness](https://github.com/AI-Architect-Lab-333/eval-bench-frontier-witness)** — measuring what a local model **gives up** against a frontier one, on your own work: deterministic checks, no model-as-judge, and a frontier pass run **first** as a witness of the bench's own validity. That witness scored **69%** on the first pass — nothing was wrong with the model, six things were wrong with the bench. Ten pitfalls, including a reasoning model that spends its entire token budget and returns zero characters, a brevity check an empty answer passes, and why five wrongly lenient checks survived three witness passes unseen. Ships the bench, its self-test, and the audit that finds leniency.
 
 ### Self-hosted infrastructure
 
