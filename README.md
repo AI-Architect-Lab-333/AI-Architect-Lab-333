@@ -13,6 +13,10 @@ Each guide states its verified environment (OS, versions, date) and ends with th
 - **[windows-tmux-agent-orchestration](https://github.com/AI-Architect-Lab-333/windows-tmux-agent-orchestration)** — driving several AI agents in parallel tmux panes on Windows (WSL2): spawn, send input, read output, poll. A Cmux-to-tmux port; documents the `docker-desktop`-default-distro and PowerShell→wsl→bash quoting traps.
 - **[dsh-blind-circuit-windows](https://github.com/AI-Architect-Lab-333/dsh-blind-circuit-windows)** — DeepSeek Harness Web UI on Windows plus llama.cpp on a Tailscale-only GPU box: the coding agent starts the UI and probes model ids, but never opens the workspace. Six pitfalls, including why `Start-Process -WindowStyle Hidden` then `ERR_CONNECTION_REFUSED`.
 
+### Evaluation
+
+- **[eval-bench-frontier-witness](https://github.com/AI-Architect-Lab-333/eval-bench-frontier-witness)** — measuring what a local model actually costs you versus a frontier one, on your own work: deterministic checks, no model-as-judge, and a frontier pass run **first** as a witness of the bench's own validity. That witness scored **69%** on the first pass — nothing was wrong with the model, six things were wrong with the bench. Ten pitfalls, including a reasoning model that spends its entire token budget and returns zero characters, a brevity check an empty answer passes, and why five wrongly lenient checks survived three witness passes unseen. Ships the bench, its self-test, and the audit that finds leniency.
+
 ### Self-hosted infrastructure
 
 - **[vps-tailscale-hardening-guide](https://github.com/AI-Architect-Lab-333/vps-tailscale-hardening-guide)** — locking down a VPS behind Tailscale until no port answers on the public IP. Covers the Docker-bypasses-UFW trap and the sshd config read-order trap.
